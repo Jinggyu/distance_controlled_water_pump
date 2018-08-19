@@ -24,9 +24,7 @@ void loop()
   if(distance < 50){
     // the pump operates intermittently at the interval of 1.3sec
     digitalWrite(motor,HIGH); //turns the pump on
-    delay(1000); 
-    digitalWrite(motor,LOW); 
-    delay(300); //
+    delay(5000); 
   }
   else{
     digitalWrite(motor,LOW); // if distance > 50cm, pump is not triggered
